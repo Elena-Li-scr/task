@@ -18,7 +18,7 @@
   position: absolute;
   top: 288px;
   left: 137px;
-  animation: jump 4s infinite ease-in-out;
+  animation: jump 4s infinite ease;
 }
 
 .ball2 {
