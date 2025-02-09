@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 800px;
+  height: 100vh;
+  margin: auto;
+  background-image: url(assets/img/circus.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.ball1 {
+  width: 120px;
+  position: absolute;
+  top: 288px;
+  left: 137px;
+  animation: jump 4s infinite ease-in-out;
+}
+
+.ball2 {
+  width: 70px;
+  position: absolute;
+  top: 250px;
+  left: 300px;
+  animation: roll 4s infinite linear;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-250px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes roll {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  50% {
+    transform: translateX(250px) rotate(360deg);
+  }
+
+  100% {
+    transform: translateX(0px) rotate(-360deg);
+  }
+}
